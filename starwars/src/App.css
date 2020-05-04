@@ -7,12 +7,14 @@
   background-color: black;
   padding: 15px;
   margin: auto;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 5px;
 }
 
 /* write your parent styles in here for your App.js */
 
 .CharacterCard {
-  display: inline-block;
+  display: block;
   float: left;
   width: 50%;
   height: 35%;

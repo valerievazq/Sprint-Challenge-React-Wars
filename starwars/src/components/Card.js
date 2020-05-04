@@ -7,8 +7,13 @@ const Box = styled.div`
   border-radius: 10px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.685);
+  font-family:  'Shadows Into Light', cursive;
 `;
 
+const StyledP = styled.p `
+font-weight: bolder;
+letter-spacing: 2px;
+`;
 function Card(props) {
   console.log("Props", props.character);
 // Information to be displayed on the character cards
@@ -16,12 +21,12 @@ function Card(props) {
     <div className="CharacterCard">
       <Box>
         <div>
-          <h1>Name: {props.character.name}</h1>
-          <p>Height: {props.character.height}</p>
-          <p>Mass: {props.character.mass}</p>
-          <p>Gender: {props.character.gender}</p>
-          <p>Skin Color: {props.character.skin_color}</p>
-          <p>Eye Color: {props.character.eye_color}</p>
+          <h1>{props.character.name}</h1>
+          <StyledP>Height: {props.character.height}</StyledP>
+          <StyledP>Mass: {props.character.mass}</StyledP>
+          <StyledP>Gender: {props.character.gender}</StyledP>
+          <StyledP>Skin Color: {props.character.skin_color}</StyledP>
+          <StyledP>Eye Color: {props.character.eye_color}</StyledP>
         </div>
       </Box>
     </div>
