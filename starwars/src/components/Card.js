@@ -7,16 +7,16 @@ const Box = styled.div`
   border-radius: 10px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.685);
-  font-family:  'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
 `;
 
-const StyledP = styled.p `
-font-weight: bolder;
-letter-spacing: 2px;
+const StyledP = styled.p`
+  font-weight: bolder;
+  letter-spacing: 2px;
 `;
 function Card(props) {
   console.log("Props", props.character);
-// Information to be displayed on the character cards
+  // Information to be displayed on the character cards
   return (
     <div className="CharacterCard">
       <Box>
