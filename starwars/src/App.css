@@ -1,14 +1,19 @@
 .App {
   text-align: center;
-  }
+}
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(218, 132, 51, 0.795);
+  background-color: black;
+  padding: 15px;
+  margin: auto;
 }
 
-.Character {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
 /* write your parent styles in here for your App.js */
+
+.CharacterCard {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 35%;
+}

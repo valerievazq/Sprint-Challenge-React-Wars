@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "./Card.js";
 
-
 function Character() {
   const [character, setCharacter] = useState([]);
 
@@ -17,8 +16,8 @@ function Character() {
       });
   }, [character]);
 
+  //map the information of the API array and display the data
   return (
-
     <div>
       {character.map((data) => {
         return <Card character={data} />;
